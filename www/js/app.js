@@ -48,19 +48,19 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     }
   })
 
-  .state('tab.items', {
-      url: '/items',
+  .state('tab.closet', {
+      url: '/closet',
       views: {
-        'tab-items': {
-          templateUrl: 'templates/tab-items.html',
+        'tab-closet': {
+          templateUrl: 'templates/tab-closet.html',
           controller: 'ItemsCtrl'
         }
       }
     })
     .state('tab.item-detail', {
-      url: '/items/:itemId',
+      url: '/closet/:itemId',
       views: {
-        'tab-items': {
+        'tab-closet': {
           templateUrl: 'templates/item-detail.html',
           controller: 'ItemDetailCtrl'
         }

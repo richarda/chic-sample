@@ -2,6 +2,14 @@ angular.module('starter.controllers', [])
 
 .controller('DashCtrl', function($scope, Items) {
   $scope.lookItems = Items.inLook()
+  $scope.itemsWord = function(itemCount) {
+    if(itemCount === 1) {
+      return "item";
+    }
+    else {
+      return "items";
+    }
+  }
 })
 
 .controller('ItemsCtrl', function($scope, $ionicListDelegate, Items) {

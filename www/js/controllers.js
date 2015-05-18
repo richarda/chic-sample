@@ -2,19 +2,13 @@ angular.module('starter.controllers', [])
 
 .controller('DashCtrl', function($scope) {})
 
-.controller('ChatsCtrl', function($scope, Chats) {
-  $scope.chats = Chats.all();
-  $scope.remove = function(chat) {
-    Chats.remove(chat);
+.controller('ItemsCtrl', function($scope, $ionicListDelegate, Items) {
+  $scope.items = Items.all()
+  $scope.remove = function(item) {
+    Items.remove(item);
   }
 })
 
-.controller('ChatDetailCtrl', function($scope, $stateParams, Chats) {
-  $scope.chat = Chats.get($stateParams.chatId);
-})
-
-.controller('AccountCtrl', function($scope) {
-  $scope.settings = {
-    enableFriends: true
-  };
+.controller('ItemDetailCtrl', function($scope, $stateParams, Items) {
+  $scope.item = Items.get($stateParams.itemId);
 });

@@ -7,6 +7,10 @@ angular.module('starter.controllers', [])
   $scope.remove = function(item) {
     Items.remove(item);
   }
+  $scope.addToLook = function(item) {
+    Items.addToLook(item);
+    $ionicListDelegate.closeOptionButtons()
+  }
 })
 
 .controller('ItemDetailCtrl', function($scope, $stateParams, Items) {

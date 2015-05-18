@@ -33,6 +33,8 @@ angular.module('starter.services', [])
     image: 'img/toddlerjeggings2.jpg'
   }];
 
+  var selected = []
+
   return {
     all: function() {
       return items;
@@ -47,6 +49,9 @@ angular.module('starter.services', [])
         }
       }
       return null;
+    },
+    addToLook: function(item) {
+      selected.push(item.id);
     }
   };
 });

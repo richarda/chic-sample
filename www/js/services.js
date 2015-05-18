@@ -39,6 +39,9 @@ angular.module('starter.services', [])
     all: function() {
       return items;
     },
+    inLook: function() {
+      return selected;
+    },
     remove: function(item) {
       items.splice(items.indexOf(item), 1);
     },

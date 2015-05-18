@@ -1,6 +1,8 @@
 angular.module('starter.controllers', [])
 
-.controller('DashCtrl', function($scope) {})
+.controller('DashCtrl', function($scope, Items) {
+  $scope.lookItems = Items.inLook()
+})
 
 .controller('ItemsCtrl', function($scope, $ionicListDelegate, Items) {
   $scope.items = Items.all()

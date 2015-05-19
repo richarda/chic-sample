@@ -7,30 +7,38 @@ angular.module('starter.services', [])
   var items = [{
     id: 0,
     type: 'top',
-    color: 'blue',
+    color: 'white',
     size: '3T',
-    description: 'short sleeve, butterflies',
-    image: 'http://i.ebayimg.com/00/s/MTYwMFgxMjE0/z/-tYAAOSwBahU97RT/$_35.JPG'
+    description: 'short sleeve, navy stripes',
+    image: 'img/stripeshirt.jpg'
   }, {
     id: 1,
     type: 'leggings',
-    size: '2T',
-    color: 'jean',
-    description: 'no pockets',
-    image: 'http://www.oldnavy.com/products/res/mainimg/stretch-denim-jeggings-for-baby-dark.jpg'
+    size: '3T',
+    color: 'dark denim',
+    description: 'jeggings',
+    image: 'img/jeggings.jpg'
   }, {
     id: 2,
     type: 'hat',
     size: '4T',
-    color: 'pink',
-    description: 'white polka dots',
-    image: 'img/pinkhat.jpg'
+    color: 'blue, green',
+    description: 'turtle hat',
+    image: 'img/turtlehat.jpg'
   }, {
     id: 3,
     type: 'leggings',
-    size: '3T',
-    color: 'jean',
-    image: 'img/toddlerjeggings2.jpg'
+    size: '2T',
+    color: 'dark denim',
+    description: 'smaller jeggings',
+    image: 'img/jeggings.jpg'
+  }, {
+    id: 4,
+    type: 'shorts',
+    size: '2T',
+    color: 'yellow',
+    description: 'yellow shorts',
+    image: 'img/yellowShorts.jpg'
   }];
 
   var selected = []
